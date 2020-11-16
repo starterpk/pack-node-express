@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <!-- Primary Meta Tags -->
+  <title>
+    Node + Express Starter Pack
+  </title>
+  <meta name="title" content=" Node + Express Starter Pack" />
+  <meta name="description" content=" Node + Express Starter Pack" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://starterpk.com" />
+  <meta property="og:title" content=" Node + Express Starter Pack" />
+  <meta property="og:description" content=" Node + Express Starter Pack" />
+  <meta property="og:image" content="https://starterpk.com/logo.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://starterpk.com/" />
+  <meta property="twitter:title" content=" Node + Express Starter Pack" />
+  <meta property="twitter:description" content=" Node + Express Starter Pack" />
+  <meta property="twitter:image" content="https://starterpk.com/logo.png" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>    
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+    <div class="container">
+      <div class="col-50">
+        <img src="logo.png" class="logo" alt="img" />
+      </div>
+      <div class="col-50">
+
+      </div>
+
+      <div class="col-50">
+        <h1>Node + Express Starter Pack</h1>
+        <p>The list on the right/below has been embedded into the page. You can find this data inside of <strong>server.js</strong></p>
+      </div>
+      <div class="col-50">
+
+        <ul>
+          <% data.forEach(function(val){ %>
+            <li value=<%= val %>><%= val %></li>
+          <% }); %>
+        </ul>
+      </div>
+    </div>
+</body>
+
+</html>
